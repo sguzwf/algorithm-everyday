@@ -1,13 +1,10 @@
-/* package whatever; // don't place package name! */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-
 class Search
 {
+	//array为一个有序数组，若n存在则返回位置，若n不存在则返回插入位置
 	public int getLoc(int[] array, int n)
 	{
 		int i = 0, j = array.length;
