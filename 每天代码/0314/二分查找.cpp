@@ -3,6 +3,7 @@
 
 int binary_search(int a[], int len, int value)
 {
+    if (value < a[0] || value > a[len-1]) return -1;
     int left = 0, right = len -1;
     while (left <= right)
     {
@@ -21,10 +22,10 @@ int main()
 {
     int array[5] = {1,3,6,9,13};
     int value;
-    while(1)
+    while(scanf("%d", &value) != EOF)
     {
-        scanf("%d", &value);
         printf("%d\n", binary_search(array, 5, value));
     }
     return 0;
 }
+
